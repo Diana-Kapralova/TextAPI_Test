@@ -35,5 +35,9 @@ For ALL stages of [Task](https://github.com/Diana-Kapralova/TextAPI_Test/tree/ma
 4. After training model I save trained weights to file `commonlit_model.pth` that was saved to  **Hugging_Text_Classification** [folder](https://drive.google.com/drive/folders/1yDwR6vXSSbxZNhqylWaBUfl5zAdBH9N4?usp=sharing).
 
 ### Stage 2: solution
-1. I created API server on FastAPI, code for these part in file [main.py](https://github.com/Diana-Kapralova/TextAPI_Test/blob/main/main.py) and some helper functions and classes for `main.py` in file [model.py](https://github.com/Diana-Kapralova/TextAPI_Test/blob/main/model.py). This part I do in my local computer, by downloading trained weights from **Hugging_Text_Classification** [folder](https://drive.google.com/drive/folders/1yDwR6vXSSbxZNhqylWaBUfl5zAdBH9N4?usp=sharing) to my computer.
-2. 
+1. I created API server on FastAPI, code for these part in file [main.py](https://github.com/Diana-Kapralova/TextAPI_Test/blob/main/main.py) and python file [model.py](https://github.com/Diana-Kapralova/TextAPI_Test/blob/main/model.py) where saved some functions and classes for working with model weights for prediction. This part I do in my local computer, by downloading trained weights from **Hugging_Text_Classification** [folder](https://drive.google.com/drive/folders/1yDwR6vXSSbxZNhqylWaBUfl5zAdBH9N4?usp=sharing) to my computer.
+2. Also, I add folder [templates](https://github.com/Diana-Kapralova/TextAPI_Test/tree/main/templates) where was saved some HTML code for API. `main.py` use this file for interface for API.
+3. Model weights saved in the same folder as `main.py` and `model.py`. Here I don't add model weights because of size(~500 MB), they was saved in folder on Google Drive **Hugging_Text_Classification**
+4. To RUN the code in terminal in the SAME repository as code location run in the terminal:
+   ```uvicorn main.py:app --reload --port 8001```
+After running this, it prints some settings according to app, to use app in browser found link http://0.0.0.0:8001 and click on it. On browser open the tab with text form and button "Predict" - push the button for getting prediction.
