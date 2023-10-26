@@ -49,4 +49,4 @@ For this stage I use Docker to Deploy API
 1. I create [Dockerfile](https://github.com/Diana-Kapralova/TextAPI_Test/blob/main/Dockerfile) where I saved all setting for creation Docker Image. It should be in the same folder where code, model weights and templates with HTML
 2. Start Docker by command in terminal in the SAME folder where Dockerfile ` sudo systemctl start docker`
 3. Then BUILD: `sudo docker build -t TextApi_Test . `. **TextApi_Test** name of project or repository, where saved api code, Dockerfile
-4. After BUILD was complete RUN the docker by `sudo docker run -p 8001:8001 TextApi_Test`. Here 8001:8001 means port for listening in `main.py` we add this port for using by app.
+4. After BUILD was complete RUN the docker by `sudo docker run -p 8001:8001 TextApi_Test`. Here 8001:8001 means port for listening in `main.py` we add this port for using by app. After running there are print settings as in stage 2 and to use app in web find link  http://0.0.0.0:8001, click it and use as described in stage 2.
