@@ -30,6 +30,10 @@ For ALL stages of [Task](https://github.com/Diana-Kapralova/TextAPI_Test/tree/ma
 
 ### Stage 1: solution
 1. Go to kaggle and download to local machine dataset from [here](https://www.kaggle.com/c/commonlitreadabilityprize/overview). I have account on kaggle, so I do it by command: `kaggle competitions download -c commonlitreadabilityprize` I have some problems with coping that files. So explanation for Kaggle API using you can search [here](https://github.com/Kaggle/kaggle-api). It works for me (I have Linux on my machine)
-2. As I don't have GPU for training model, I use Google Colab. So I replace my downloaded dataset as folder **commonlitreadabilityprize** from kaggle to my Google Drive into folder **Hugging_Text_Classification**. That folder you can find [here](https://drive.google.com/drive/folders/1yDwR6vXSSbxZNhqylWaBUfl5zAdBH9N4?usp=sharing) . 
+2. As I don't have GPU for training model, I use Google Colab. So I upload my downloaded dataset as folder **commonlitreadabilityprize** from kaggle to my Google Drive into folder **Hugging_Text_Classification**. That folder you can find [here](https://drive.google.com/drive/folders/1yDwR6vXSSbxZNhqylWaBUfl5zAdBH9N4?usp=sharing) . 
 3. I create Google Colab file, [Text_Classification.ipynb](https://github.com/Diana-Kapralova/TextAPI_Test/blob/main/Text_Classifictaion.ipynb) and change Runtime to GPU (T4). Here I connect notebook to my drive and work with dataset from here.
 4. After training model I save trained weights to file `commonlit_model.pth` that was saved to  **Hugging_Text_Classification** [folder](https://drive.google.com/drive/folders/1yDwR6vXSSbxZNhqylWaBUfl5zAdBH9N4?usp=sharing).
+
+### Stage 2: solution
+1. I created API server on FastAPI, code for these part in file [main.py](https://github.com/Diana-Kapralova/TextAPI_Test/blob/main/main.py) and some helper functions and classes for `main.py` in file [model.py](https://github.com/Diana-Kapralova/TextAPI_Test/blob/main/model.py). This part I do in my local computer, by downloading trained weights from **Hugging_Text_Classification** [folder](https://drive.google.com/drive/folders/1yDwR6vXSSbxZNhqylWaBUfl5zAdBH9N4?usp=sharing) to my computer.
+2. 
