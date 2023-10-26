@@ -1,7 +1,7 @@
 # TextAPI_Test
-## Task
 This is project repository as a Test to the course **Machine Learning in Production**.
-There are several stages in that test:
+## Task
+There are several stages in the task:
 
 ### Stage 1 (required):
 Implement any NLP model for this problem: https://www.kaggle.com/c/commonlitreadabilityprize/overview
